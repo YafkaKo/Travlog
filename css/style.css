@@ -175,6 +175,7 @@ html {
 
 .header {
   position: relative;
+  z-index: 2;
 }
 .header__ellipse {
   position: absolute;
@@ -303,7 +304,7 @@ html {
 
 .main {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   padding: 64px 0;
 }
 .main__container {
@@ -1401,26 +1402,22 @@ html {
 }
 @media (max-width: 900px) {
   .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     top: 0;
     right: -15px;
     left: -15px;
     position: absolute;
-    width: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     background-color: #ffffff;
-    padding: 90px 0 64px 0;
+    padding: 90px 0 32px 0;
     z-index: 99;
+    margin: 0 auto;
+    text-align: center;
   }
   .header__nav-item {
     display: block;
     margin: 0 auto;
     font-size: 28px;
+    padding: 20px;
   }
   .header__burger {
     display: -webkit-box;

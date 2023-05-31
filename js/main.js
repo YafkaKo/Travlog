@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  $(".header__nav").slideUp();
   $(".services__right").slick({
     infinite: false,
     slidesToShow: 1,
@@ -40,12 +39,12 @@ $(document).ready(function () {
   $(".header__burger").click(function () {
     $(this).toggleClass("active");
     $(".header__nav").slideToggle();
-    // if ($(this).hasClass("active")) {
-    //   $(".header__nav").slideDown();
-    // }
-    // else {
-    //   $(".header__nav").slideUp();
-    // }
+    if ($(this).hasClass("active")) {
+      $(".main").animate({ "z-index": "1", "opacity": ".5" }, 300)
+    }
+    else {
+      $(".main").animate({ "z-index": "3", "opacity": "1" }, 300)
+    }
   })
 })
 
