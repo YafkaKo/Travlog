@@ -1,0 +1,10 @@
+@media (max-width: 900px) {
+  .header__nav {
+    display: none;
+  }
+  .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
